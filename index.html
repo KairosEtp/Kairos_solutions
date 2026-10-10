@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="K-AI-ROS Solutions designs and builds custom AI software for real business workflows. Based in Zlín, Czech Republic. Working in English and Czech.">
+    <link rel="canonical" href="https://kairos-etp.eu/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="K-AI-ROS Solutions | Custom AI software">
+    <meta property="og:description" content="Custom AI software for better business workflows. Built in Zlín, Czech Republic.">
+    <meta property="og:url" content="https://kairos-etp.eu/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://kairos-etp.eu/#organization",
+          "name": "K-AI-ROS Solutions",
+          "url": "https://kairos-etp.eu/",
+          "email": "solutions@kairos-etp.eu",
+          "telephone": "+420721670645",
+          "description": "Independent AI and software studio in Zlín, Czech Republic, building custom AI software and intelligent business applications.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Zlín",
+            "addressCountry": "CZ"
+          },
+          "areaServed": ["Czech Republic", "Europe", "Worldwide"],
+          "knowsLanguage": ["Czech", "English"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://kairos-etp.eu/#website",
+          "url": "https://kairos-etp.eu/",
+          "name": "K-AI-ROS Solutions",
+          "inLanguage": ["en", "cs"],
+          "publisher": { "@id": "https://kairos-etp.eu/#organization" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://kairos-etp.eu/#custom-ai-software",
+          "name": "Custom AI software development",
+          "serviceType": [
+            "Custom AI applications",
+            "AI workflow automation",
+            "AI search and assistants",
+            "Machine learning, computer vision and prediction",
+            "AI strategy and prototyping"
+          ],
+          "description": "Design, development and integration of AI software tailored to business workflows, data and products.",
+          "provider": { "@id": "https://kairos-etp.eu/#organization" },
+          "areaServed": ["Czech Republic", "Europe", "Worldwide"]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://kairos-etp.eu/#faq",
+          "inLanguage": "en",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does K-AI-ROS Solutions build?",
+              "acceptedAnswer": { "@type": "Answer", "text": "K-AI-ROS Solutions designs and builds custom AI applications, workflow automation, AI search and assistants, machine-learning solutions, and prototypes for business use." }
+            },
+            {
+              "@type": "Question",
+              "name": "How does an AI software project start?",
+              "acceptedAnswer": { "@type": "Answer", "text": "The team first learns how the current process works, identifies a useful and feasible AI use case, agrees what to prove, and then develops and tests the solution with the client." }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is K-AI-ROS Solutions based?",
+              "acceptedAnswer": { "@type": "Answer", "text": "K-AI-ROS Solutions is an independent AI and software studio based in Zlín, Czech Republic. The team works in Czech and English with clients internationally." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  <title>K-AI-ROS Solutions | Custom AI software, built around your business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #101827;
+      --ink-soft: #26344a;
+      --paper: #f4f6f8;
+      --white: #fff;
+      --blue: #3376f6;
+      --blue-deep: #2059ce;
+      --sky: #dce9ff;
+      --lime: #d6f36a;
+      --muted: #6f7b8c;
+      --line: #dce1e7;
+      --serif: Georgia, 'Times New Roman', serif;
+      --display: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+      --body: 'Manrope', 'Segoe UI', sans-serif;
+      --mono: 'DM Mono', Consolas, monospace;
+      --wrap: 1200px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--body); font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    body, button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; text-decoration: none; }
+    button { color: inherit; font: inherit; }
+    img { display: block; max-width: 100%; }
+    ::selection { color: var(--ink); background: var(--lime); }
+    .wrap { width: min(var(--wrap), calc(100% - 64px)); margin-inline: auto; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0; color: var(--blue); font: 500 11px/1.4 var(--mono); letter-spacing: 0; text-transform: uppercase; }
+    .eyebrow::before { width: 22px; height: 1px; background: currentColor; content: ''; }
+    .section { padding: 120px 0; }
+    .section-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, .55fr); align-items: end; gap: 44px; margin-bottom: 58px; }
+    .section-heading h2 { max-width: 720px; margin: 18px 0 0; font: 600 clamp(38px, 5vw, 64px)/1.02 var(--display); letter-spacing: 0; }
+    .section-heading > p { max-width: 430px; margin: 0 0 5px; color: var(--muted); font-size: 15px; }
+    .button { display: inline-flex; min-height: 54px; align-items: center; justify-content: center; gap: 16px; padding: 0 22px; border: 1px solid transparent; border-radius: 3px; background: var(--blue); color: var(--white); font-size: 13px; font-weight: 800; transition: background .2s ease, color .2s ease, transform .2s ease; }
+    .button:hover { transform: translateY(-2px); background: var(--blue-deep); }
+    .button--light { border-color: rgba(255,255,255,.3); background: transparent; color: var(--white); }
+    .button--light:hover { border-color: var(--lime); background: var(--lime); color: var(--ink); }
+    .button--ink { background: var(--ink); }
+    .button--ink:hover { background: #25344b; }
+    .arrow { display: inline-block; font-size: 18px; line-height: 1; transition: transform .2s ease; }
+    a:hover .arrow { transform: translate(3px, -2px); }
+
+    .progress { position: fixed; z-index: 100; inset: 0 auto auto 0; width: 100%; height: 3px; pointer-events: none; }
+    .progress span { display: block; width: 0; height: 100%; background: var(--lime); }
+    .header { position: absolute; z-index: 20; inset: 0 0 auto; color: var(--white); }
+    .nav { display: flex; min-height: 88px; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.14); }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--white); }
+    .brand img { width: 38px; height: 38px; object-fit: contain; }
+      .brand-icon { position: relative; display: block; width: 40px; height: 40px; flex: 0 0 40px; overflow: hidden; background: var(--ink); }
+      .brand .brand-icon img { position: absolute; top: -70px; left: -70px; width: 180px; max-width: none; height: 180px; object-fit: cover; mix-blend-mode: screen; }
+    .brand-name { font: 700 17px/1 var(--display); letter-spacing: .2px; }
+    .brand-name span { display: block; margin-top: 5px; color: #9fb0c8; font: 500 8px/1 var(--mono); letter-spacing: 1.8px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; color: #c0cad8; font-size: 12px; font-weight: 700; }
+    .nav-links a { transition: color .2s ease; }
+    .nav-links a:hover { color: var(--lime); }
+    .nav-right { display: flex; align-items: center; gap: 19px; }
+    .language { display: flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid rgba(255,255,255,.2); border-radius: 3px; }
+    .language button { min-width: 34px; min-height: 29px; padding: 0 6px; border: 0; border-radius: 2px; background: transparent; color: #aab6c6; cursor: pointer; font: 500 10px var(--mono); }
+    .language button[aria-pressed="true"] { background: var(--lime); color: var(--ink); }
+    .nav-cta { display: inline-flex; min-height: 40px; align-items: center; gap: 12px; padding: 0 14px; border: 1px solid rgba(255,255,255,.45); border-radius: 2px; font-size: 11px; font-weight: 800; transition: color .2s ease, background .2s ease; }
+    .nav-cta:hover { background: var(--lime); color: var(--ink); }
+    .menu-toggle { display: none; width: 42px; height: 42px; padding: 10px; border: 1px solid rgba(255,255,255,.28); border-radius: 3px; background: transparent; cursor: pointer; }
+    .menu-toggle span { display: block; height: 1px; margin: 5px 0; background: white; transition: transform .2s ease; }
+    .mobile-panel { display: none; }
+
+    .hero { position: relative; display: flex; min-height: 760px; align-items: center; overflow: hidden; padding: 150px 0 90px; background: var(--ink); color: var(--white); }
+    .hero::before { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 68px 68px; mask-image: linear-gradient(90deg, black 0%, transparent 90%); content: ''; }
+    .hero::after { position: absolute; top: 10%; right: -20%; width: 720px; aspect-ratio: 1; border: 1px solid rgba(78,135,255,.14); border-radius: 50%; box-shadow: 0 0 0 85px rgba(78,135,255,.025), 0 0 0 170px rgba(78,135,255,.02); content: ''; }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 50px; }
+    .hero-copy { max-width: 690px; }
+    .hero .eyebrow { color: var(--lime); }
+    .hero h1 { max-width: 730px; margin: 25px 0 22px; font: 600 clamp(55px, 6vw, 82px)/.99 var(--display); letter-spacing: 0; }
+    .hero h1 em { color: #75a5ff; font: 500 1em/1 var(--serif); }
+    .hero-copy > p { max-width: 560px; margin: 0; color: #b9c4d2; font-size: 16px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 47px; color: #aeb9c8; font: 400 10px/1.5 var(--mono); }
+    .hero-note i { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 14px rgba(214,243,106,.65); }
+    .hero-visual { position: relative; min-width: 0; padding: 10px 0 28px 24px; }
+    .hero-photo { position: relative; height: 476px; overflow: hidden; background: #293a50; }
+    .hero-photo::after { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(16,24,39,.62)); content: ''; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 51% center; filter: saturate(.78); }
+    .photo-caption { position: absolute; z-index: 1; right: 18px; bottom: 17px; left: 20px; display: flex; justify-content: space-between; color: white; font: 400 9px var(--mono); text-transform: uppercase; }
+    .visual-tag { position: absolute; z-index: 2; top: 0; left: 0; display: grid; width: 116px; height: 116px; place-content: center; border: 1px solid rgba(255,255,255,.35); background: var(--lime); color: var(--ink); text-align: center; transform: rotate(-5deg); }
+    .visual-tag strong { font: 700 25px/1 var(--display); }
+    .visual-tag span { margin-top: 6px; font: 500 8px/1.4 var(--mono); text-transform: uppercase; }
+    .visual-index { position: absolute; right: -10px; bottom: 0; display: grid; width: 92px; height: 92px; place-content: center; background: var(--blue); color: white; text-align: center; }
+    .visual-index strong { font: 600 26px/1 var(--display); }
+    .visual-index span { margin-top: 5px; font: 400 8px var(--mono); text-transform: uppercase; }
+    .hero-foot { position: absolute; right: 0; bottom: 0; left: 0; z-index: 2; border-top: 1px solid rgba(255,255,255,.14); }
+    .hero-foot-inner { display: flex; justify-content: space-between; padding: 16px 0; color: #9aa8ba; font: 400 9px var(--mono); letter-spacing: .6px; text-transform: uppercase; }
+
+    .intro { padding: 31px 0; border-bottom: 1px solid var(--line); background: var(--white); }
+    .intro-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .intro-label { color: var(--muted); font: 500 10px var(--mono); text-transform: uppercase; }
+    .intro-list { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px 30px; color: var(--ink-soft); font: 600 12px var(--display); }
+    .intro-list span::before { margin-right: 10px; color: var(--blue); content: '↗'; }
+
+    .problem { background: var(--paper); }
+    .problem-grid { display: grid; grid-template-columns: .78fr 1.22fr; gap: 90px; align-items: start; }
+    .problem-lead { position: sticky; top: 130px; }
+    .problem-lead h2 { margin: 20px 0; font: 600 clamp(38px, 5vw, 62px)/1.04 var(--display); letter-spacing: 0; }
+    .problem-lead h2 span { color: var(--blue); font-family: var(--serif); font-weight: 400; }
+    .problem-lead p { max-width: 350px; margin: 0; color: var(--muted); }
+    .problem-list { border-top: 1px solid var(--line); }
+    .problem-row { display: grid; grid-template-columns: 46px 1fr 34px; gap: 18px; align-items: start; padding: 25px 0; border-bottom: 1px solid var(--line); }
+    .problem-row .num { color: var(--blue); font: 400 10px var(--mono); }
+    .problem-row h3 { margin: 0 0 6px; font: 700 17px/1.3 var(--display); }
+    .problem-row p { max-width: 510px; margin: 0; color: var(--muted); font-size: 13px; }
+    .problem-row .row-mark { color: #9ba8b8; font: 400 20px var(--mono); }
+
+    .capabilities { background: var(--white); }
+    .cap-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+    .cap-card { position: relative; display: flex; min-height: 265px; flex-direction: column; justify-content: space-between; grid-column: span 4; overflow: hidden; padding: 28px; border: 1px solid var(--line); background: var(--paper); transition: transform .3s ease, border-color .3s ease, background .3s ease; }
+    .cap-card:hover { transform: translateY(-5px); border-color: #a9c4fc; background: #f8faff; }
+    .cap-card--wide { grid-column: span 7; min-height: 300px; background: var(--ink); color: white; }
+    .cap-card--blue { grid-column: span 5; min-height: 300px; border-color: var(--blue); background: var(--blue); color: white; }
+    .cap-top { display: flex; align-items: center; justify-content: space-between; }
+    .cap-index { color: var(--muted); font: 400 10px var(--mono); }
+    .cap-icon { display: grid; width: 36px; height: 36px; place-content: center; border: 1px solid var(--line); color: var(--blue); font: 500 14px var(--mono); }
+    .cap-card--wide .cap-icon, .cap-card--blue .cap-icon { border-color: rgba(255,255,255,.35); color: var(--lime); }
+    .cap-card h3 { max-width: 360px; margin: 28px 0 9px; font: 600 24px/1.15 var(--display); }
+    .cap-card p { max-width: 410px; margin: 0; color: var(--muted); font-size: 13px; }
+    .cap-card--wide p { color: #b6c2d1; }
+    .cap-card--blue p { color: #e5edff; }
+    .cap-card--wide::after { position: absolute; right: -20px; bottom: -98px; width: 245px; height: 245px; border: 1px solid rgba(112,161,255,.4); border-radius: 50%; box-shadow: 0 0 0 30px rgba(112,161,255,.08), 0 0 0 60px rgba(112,161,255,.05); content: ''; }
+    .cap-card--blue::after { position: absolute; right: -20px; bottom: -95px; width: 220px; height: 220px; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; box-shadow: 0 0 0 30px rgba(255,255,255,.1), 0 0 0 60px rgba(255,255,255,.07); content: ''; }
+
+    .outcomes { overflow: hidden; background: #e6edf5; }
+    .outcomes-grid { display: grid; grid-template-columns: 1fr .9fr; align-items: center; gap: 72px; }
+    .outcomes-copy h2 { max-width: 590px; margin: 20px 0; font: 600 clamp(40px, 5.4vw, 68px)/1.02 var(--display); letter-spacing: 0; }
+    .outcomes-copy > p { max-width: 500px; margin: 0; color: var(--muted); }
+    .outcome-points { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 26px; margin-top: 37px; }
+    .outcome-point { padding-top: 14px; border-top: 1px solid #c9d3df; }
+    .outcome-point strong { display: block; font: 700 14px var(--display); }
+    .outcome-point span { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; line-height: 1.5; }
+    .workflow { position: relative; padding: 29px; border: 1px solid #cbd6e3; background: rgba(255,255,255,.72); box-shadow: 12px 12px 0 rgba(16,24,39,.04); }
+      .workflow { min-width: 0; overflow: hidden; }
+      .outcomes-grid { grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); }
+    .workflow-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 18px; border-bottom: 1px solid var(--line); color: var(--muted); font: 400 9px var(--mono); text-transform: uppercase; }
+    .workflow-head span:last-child { color: var(--blue); }
+    .workflow-item { display: grid; grid-template-columns: 35px 1fr 18px; gap: 13px; align-items: center; padding: 17px 0; border-bottom: 1px solid var(--line); }
+    .workflow-item:last-child { border-bottom: 0; padding-bottom: 3px; }
+    .workflow-icon { display: grid; width: 32px; height: 32px; place-content: center; background: var(--sky); color: var(--blue); font: 500 12px var(--mono); }
+    .workflow-item strong { display: block; font: 700 12px var(--display); }
+    .workflow-item small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; }
+    .workflow-check { color: #49a98a; font-size: 13px; }
+    .workflow-foot { display: flex; align-items: center; gap: 8px; margin-top: 18px; padding: 12px 13px; background: var(--ink); color: #eaf0f8; font: 400 9px/1.6 var(--mono); }
+    .workflow-foot b { color: var(--lime); font-weight: 400; }
+
+    .approach { background: var(--ink); color: white; }
+    .approach .eyebrow { color: var(--lime); }
+    .approach .section-heading h2 { color: white; }
+    .approach .section-heading > p { color: #aab6c6; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,.2); }
+    .step { position: relative; min-height: 270px; padding: 24px 25px 20px 0; border-right: 1px solid rgba(255,255,255,.16); }
+    .step:not(:first-child) { padding-left: 25px; }
+    .step:last-child { border-right: 0; }
+    .step-index { display: flex; align-items: center; justify-content: space-between; color: #8c9aab; font: 400 10px var(--mono); }
+    .step-index::after { color: var(--lime); content: '↗'; font-size: 16px; }
+    .step h3 { margin: 58px 0 11px; color: white; font: 600 19px var(--display); }
+    .step p { max-width: 235px; margin: 0; color: #aab6c6; font-size: 12px; }
+    .approach-callout { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 44px; padding: 22px 25px; background: #1a2637; }
+    .approach-callout p { margin: 0; color: #d1d9e4; font-size: 13px; }
+    .approach-callout strong { color: var(--lime); }
+
+    .about { background: var(--paper); }
+    .about-grid { display: grid; grid-template-columns: .94fr 1.06fr; align-items: center; gap: 76px; }
+    .about-photo { position: relative; height: 490px; background: #d5dce5; }
+    .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; filter: saturate(.82); }
+    .about-stamp { position: absolute; right: -21px; bottom: -22px; display: flex; width: 136px; height: 136px; flex-direction: column; align-items: center; justify-content: center; background: var(--lime); color: var(--ink); text-align: center; transform: rotate(4deg); }
+    .about-stamp strong { font: 600 32px/1 var(--serif); }
+    .about-stamp span { max-width: 90px; margin-top: 8px; font: 500 8px/1.5 var(--mono); text-transform: uppercase; }
+    .about-copy h2 { margin: 19px 0 18px; font: 600 clamp(38px, 4.5vw, 58px)/1.04 var(--display); }
+    .about-copy > p { max-width: 530px; margin: 0; color: var(--muted); }
+    .about-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 29px 0 30px; }
+    .about-fact { padding-top: 14px; border-top: 1px solid var(--line); }
+    .about-fact strong { display: block; font: 700 13px var(--display); }
+    .about-fact span { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; }
+
+    .contact { padding: 108px 0; overflow: hidden; background: var(--blue); color: white; }
+      .contact { position: relative; }
+      .faq { background: var(--white); }
+      .faq-list { border-top: 1px solid var(--line); }
+      .faq-item { border-bottom: 1px solid var(--line); }
+      .faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 19px 0; cursor: pointer; font: 700 16px/1.4 var(--display); list-style: none; }
+      .faq-item summary::-webkit-details-marker { display: none; }
+      .faq-item summary::after { color: var(--blue); content: '+'; font: 400 22px/1 var(--mono); }
+      .faq-item[open] summary::after { content: '−'; }
+      .faq-item p { max-width: 800px; margin: 0; padding: 0 36px 20px 0; color: var(--muted); font-size: 13px; }
+    .contact-inner { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 45px; }
+    .contact .eyebrow { color: var(--lime); }
+    .contact h2 { max-width: 760px; margin: 21px 0 17px; font: 600 clamp(47px, 7vw, 84px)/.98 var(--display); }
+    .contact p { max-width: 525px; margin: 0; color: #e0e9ff; font-size: 14px; }
+    .contact-actions { display: flex; min-width: 215px; flex-direction: column; gap: 12px; }
+    .contact .button { background: var(--lime); color: var(--ink); }
+    .contact .button:hover { background: white; }
+    .contact-link { color: #e0e9ff; font-size: 12px; text-align: center; }
+    .contact-link:hover { color: white; text-decoration: underline; }
+    .contact-mark { position: absolute; top: -180px; right: 7%; width: 480px; height: 480px; border: 1px solid rgba(255,255,255,.13); border-radius: 50%; box-shadow: 0 0 0 60px rgba(255,255,255,.035), 0 0 0 120px rgba(255,255,255,.025); pointer-events: none; }
+
+    .footer { padding: 45px 0 24px; background: #0b121e; color: white; }
+    .footer-main { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 60px; padding-bottom: 40px; }
+    .footer .brand { margin-bottom: 17px; }
+    .footer-about { max-width: 360px; margin: 0; color: #98a5b6; font-size: 12px; }
+    .footer-title { margin: 3px 0 15px; color: #78879a; font: 500 9px var(--mono); text-transform: uppercase; }
+    .footer-links { display: grid; gap: 9px; color: #d2d9e3; font-size: 11px; }
+    .footer-links a:hover { color: var(--lime); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.12); color: #78879a; font: 400 9px var(--mono); }
+
+    .reveal { opacity: 1; transform: none; }
+    .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .js .reveal[data-delay="1"] { transition-delay: .1s; }
+    .js .reveal[data-delay="2"] { transition-delay: .2s; }
+    .js .reveal[data-delay="3"] { transition-delay: .3s; }
+    @media (max-width: 960px) {
+      .wrap { width: min(var(--wrap), calc(100% - 44px)); }
+      .nav-links { gap: 19px; }
+      .nav-right { gap: 12px; }
+      .hero { min-height: 700px; }
+      .hero-grid { gap: 30px; }
+      .hero-photo { height: 410px; }
+      .problem-grid { gap: 48px; }
+      .outcomes-grid, .about-grid { gap: 45px; }
+    }
+    @media (max-width: 760px) {
+      html { scroll-padding-top: 70px; }
+      .wrap { width: calc(100% - 40px); }
+      .section { padding: 82px 0; }
+      .section-heading { grid-template-columns: 1fr; gap: 17px; margin-bottom: 38px; }
+      .section-heading h2 { margin-top: 14px; }
+      .nav { min-height: 72px; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-right { gap: 10px; }
+      .menu-toggle { display: block; }
+      .mobile-panel { position: absolute; top: 72px; right: 0; left: 0; padding: 11px 20px 20px; border-bottom: 1px solid rgba(255,255,255,.2); background: var(--ink); }
+      .mobile-panel.is-open { display: grid; }
+      .mobile-panel a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.1); color: #d3dce7; font-size: 13px; }
+      .mobile-panel a:last-child { margin-top: 12px; padding: 13px 15px; border: 0; background: var(--blue); color: white; text-align: center; }
+      .hero { min-height: auto; padding: 132px 0 82px; }
+      .hero::after { top: 25%; right: -95%; width: 600px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+      .hero h1 { max-width: 580px; margin-top: 20px; font-size: clamp(52px, 12vw, 82px); }
+      .hero-copy > p { font-size: 14px; }
+      .hero-note { margin-top: 29px; }
+      .hero-visual { width: min(100%, 530px); justify-self: center; padding: 8px 0 20px 14px; }
+      .hero-photo { height: min(78vw, 390px); }
+      .visual-tag { width: 94px; height: 94px; }
+      .visual-index { right: -3px; width: 78px; height: 78px; }
+      .hero-foot-inner { gap: 12px; }
+      .hero-foot-inner span:last-child { text-align: right; }
+      .intro-inner { align-items: flex-start; flex-direction: column; }
+      .intro-list { justify-content: flex-start; gap: 10px 20px; }
+      .problem-grid { grid-template-columns: 1fr; gap: 34px; }
+      .problem-lead { position: static; }
+      .problem-row { grid-template-columns: 33px 1fr 20px; gap: 12px; padding: 20px 0; }
+      .problem-row h3 { font-size: 15px; }
+      .problem-row p { font-size: 12px; }
+      .cap-grid { gap: 10px; }
+      .cap-card, .cap-card--wide, .cap-card--blue { padding: 16px; }
+      .cap-card h3 { font-size: 17px; }
+      .workflow { padding: 16px; }
+      .footer-main { gap: 28px 16px; }
+    }
+    @media (max-width: 410px) {
+          @media (max-width: 760px) {
+            .outcomes-grid, .about-grid { grid-template-columns: minmax(0, 1fr); }
+            .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .step { min-width: 0; }
+          }
+          @media (max-width: 410px) {
+      .wrap { width: calc(100% - 32px); }
+      .brand-name { font-size: 15px; }
+      .brand img { width: 34px; height: 34px; }
+      .language button { min-width: 30px; }
+      .hero h1 { font-size: 48px; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .button { width: 100%; }
+      .hero-foot-inner { gap: 12px; }
+      .cap-card, .cap-card--wide, .cap-card--blue { padding: 16px; }
+      .cap-card h3 { font-size: 17px; }
+      .workflow { padding: 16px; }
+      .footer-main { gap: 28px 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .js .reveal { opacity: 1; transform: none; }
+    }
+    .outcomes-grid { grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); }
+    .workflow { min-width: 0; overflow: hidden; }
+    @media (max-width: 760px) {
+      .outcomes-grid, .about-grid { grid-template-columns: minmax(0, 1fr); }
+      .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .step { min-width: 0; }
+      .contact-inner { grid-template-columns: minmax(0, 1fr); gap: 31px; }
+      .contact-actions { min-width: 0; align-items: flex-start; }
+      .contact-link { text-align: left; }
+      .contact-mark { right: -320px; }
+      .about-stamp { right: 0; }
+      .footer-main { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
+      .footer-brand-block { grid-column: span 2; }
+      .footer-bottom { flex-direction: column; gap: 8px; }
+    }
+  </style>
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5ZJPF1C9E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z5ZJPF1C9E');
+  </script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+  <header class="header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="K-AI-ROS Solutions home">
+        <span class="brand-icon"><img src="loga/Kairos%20blank%20(2).png" alt=""></span>
+        <span class="brand-name">K-AI-ROS<span>SOLUTIONS</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#work" data-i18n="navWork">What we build</a>
+        <a href="#approach" data-i18n="navApproach">How we work</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+      </div>
+      <div class="nav-right">
+        <div class="language" role="group" aria-label="Choose language">
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+          <button type="button" data-language="cs" aria-pressed="false">CS</button>
+        </div>
+        <a class="nav-cta" href="#contact"><span data-i18n="navCta">Let's talk</span><span class="arrow" aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-panel"><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-panel wrap" id="mobile-panel">
+      <a href="#work" data-i18n="navWork">What we build</a>
+      <a href="#approach" data-i18n="navApproach">How we work</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#contact" data-i18n="navCta">Let's talk</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">AI built around the way you work</p>
+          <h1 data-i18n="heroTitle">Your business,<br>with an <em>extra brain.</em></h1>
+          <p data-i18n="heroText">We design and build custom AI software that takes on the repetitive, connects the disconnected and helps your people make better decisions. Made for your business. Delivered by a team in the Czech Republic.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact"><span data-i18n="heroCta">Tell us what needs to work better</span><span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="button button--light" href="#work"><span data-i18n="heroSecondary">See what we build</span><span class="arrow" aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><i aria-hidden="true"></i><span data-i18n="heroNote">INDEPENDENT AI STUDIO · ZLÍN, CZECH REPUBLIC · CZ / EN</span></div>
+        </div>
+        <div class="hero-visual reveal" data-delay="2">
+          <div class="visual-tag"><strong>AI</strong><span data-i18n="visualTag">made<br>useful</span></div>
+          <div class="hero-photo">
+            <img src="img/team.jpeg" alt="K-AI-ROS team working together around a computer" fetchpriority="high">
+            <div class="photo-caption"><span data-i18n="photoCaption">People first. Technology second.</span><span>K-AI-ROS / CZ</span></div>
+          </div>
+          <div class="visual-index"><strong>01</strong><span data-i18n="visualIndex">Built for you</span></div>
+        </div>
+      </div>
+      <div class="hero-foot"><div class="wrap hero-foot-inner"><span data-i18n="heroFootLeft">From first useful idea to software your team actually uses</span><span data-i18n="heroFootRight">No AI for AI's sake</span></div></div>
+    </section>
+
+    <div class="intro"><div class="wrap intro-inner"><span class="intro-label" data-i18n="introLabel">A practical AI partner for</span><div class="intro-list"><span data-i18n="intro1">Growing companies</span><span data-i18n="intro2">Operational teams</span><span data-i18n="intro3">Digital products</span><span data-i18n="intro4">Complex workflows</span></div></div></div>
+
+    <section class="section problem" id="why">
+      <div class="wrap problem-grid">
+        <div class="problem-lead reveal">
+          <p class="eyebrow" data-i18n="problemEyebrow">Start with the work, not the hype</p>
+          <h2 data-i18n="problemTitle">Good AI starts with a <span>real bottleneck.</span></h2>
+          <p data-i18n="problemText">The best use of AI is rarely “add a chatbot”. It is finding the point where time, attention or useful information gets lost, then building something that makes that work measurably easier.</p>
+        </div>
+        <div class="problem-list">
+          <article class="problem-row reveal"><span class="num">01</span><div><h3 data-i18n="problem1Title">The same work, again and again</h3><p data-i18n="problem1Text">Triage incoming requests, extract information from documents, prepare routine reports or handle the first round of support.</p></div><span class="row-mark" aria-hidden="true">↗</span></article>
+          <article class="problem-row reveal" data-delay="1"><span class="num">02</span><div><h3 data-i18n="problem2Title">Knowledge scattered across the business</h3><p data-i18n="problem2Text">Let people find accurate answers in company documents, product information and internal knowledge, with sources in view.</p></div><span class="row-mark" aria-hidden="true">↗</span></article>
+          <article class="problem-row reveal" data-delay="2"><span class="num">03</span><div><h3 data-i18n="problem3Title">Important signals buried in your data</h3><p data-i18n="problem3Text">Surface patterns, forecast demand, enrich decisions and turn the data you already own into a more useful tool.</p></div><span class="row-mark" aria-hidden="true">↗</span></article>
+          <article class="problem-row reveal" data-delay="3"><span class="num">04</span><div><h3 data-i18n="problem4Title">A product idea that needs an AI layer</h3><p data-i18n="problem4Text">Build intelligent features into a web or mobile product, from first prototype through production and iteration.</p></div><span class="row-mark" aria-hidden="true">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section capabilities" id="work">
+      <div class="wrap">
+        <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="workEyebrow">From opportunity to working software</p><h2 data-i18n="workTitle">The right tool for the job. Not a demo that goes nowhere.</h2></div><p data-i18n="workIntro">We combine product thinking, software engineering and applied AI to build systems around your goals, existing tools and real-world constraints.</p></div>
+        <div class="cap-grid">
+          <article class="cap-card cap-card--wide reveal"><div class="cap-top"><span class="cap-index">01 / PRODUCT</span><span class="cap-icon" aria-hidden="true">AI</span></div><div><h3 data-i18n="cap1Title">Custom AI applications</h3><p data-i18n="cap1Text">Purpose-built web and mobile software, copilots and internal tools shaped around the people who will use them.</p></div></article>
+          <article class="cap-card cap-card--blue reveal" data-delay="1"><div class="cap-top"><span class="cap-index">02 / AUTOMATION</span><span class="cap-icon" aria-hidden="true">↗</span></div><div><h3 data-i18n="cap2Title">Workflow automation</h3><p data-i18n="cap2Text">Connect systems, remove avoidable hand-offs and put routine decisions on a reliable, reviewable path.</p></div></article>
+          <article class="cap-card reveal" data-delay="1"><div class="cap-top"><span class="cap-index">03 / KNOWLEDGE</span><span class="cap-icon" aria-hidden="true">⌕</span></div><div><h3 data-i18n="cap3Title">AI search & assistants</h3><p data-i18n="cap3Text">Make company knowledge easier to find, grounded in your own information and designed with sensible access controls.</p></div></article>
+          <article class="cap-card reveal" data-delay="2"><div class="cap-top"><span class="cap-index">04 / INTELLIGENCE</span><span class="cap-icon" aria-hidden="true">◎</span></div><div><h3 data-i18n="cap4Title">Models, vision & prediction</h3><p data-i18n="cap4Text">Apply machine learning, language and image models where they solve a specific problem better than a rule-based approach.</p></div></article>
+          <article class="cap-card reveal" data-delay="3"><div class="cap-top"><span class="cap-index">05 / DIRECTION</span><span class="cap-icon" aria-hidden="true">→</span></div><div><h3 data-i18n="cap5Title">AI strategy & prototypes</h3><p data-i18n="cap5Text">Prioritise viable opportunities, test assumptions early and know what is worth building before committing to a rollout.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section outcomes" id="outcomes">
+      <div class="wrap outcomes-grid">
+        <div class="outcomes-copy reveal"><p class="eyebrow" data-i18n="outcomeEyebrow">Useful is the whole point</p><h2 data-i18n="outcomeTitle">Less busywork.<br>More room for<br><em>good decisions.</em></h2><p data-i18n="outcomeText">We agree what should improve before we build. Then we shape, test and measure the solution against that outcome, not against how impressive the technology looks.</p><div class="outcome-points"><div class="outcome-point"><strong data-i18n="outcome1Title">Give time back</strong><span data-i18n="outcome1Text">Automate repeatable work so people can focus on work that needs people.</span></div><div class="outcome-point"><strong data-i18n="outcome2Title">Make knowledge usable</strong><span data-i18n="outcome2Text">Get relevant information to the right person, in the flow of their work.</span></div><div class="outcome-point"><strong data-i18n="outcome3Title">Improve consistency</strong><span data-i18n="outcome3Text">Standardise routine steps while keeping human review where it matters.</span></div><div class="outcome-point"><strong data-i18n="outcome4Title">Build room to grow</strong><span data-i18n="outcome4Text">Start with a focused use case and expand when the value is clear.</span></div></div></div>
+        <div class="workflow reveal" data-delay="2" aria-label="Illustration of a connected AI workflow"><div class="workflow-head"><span data-i18n="workflowHead">A workflow, made more useful</span><span data-i18n="workflowStatus">● Connected</span></div><div class="workflow-item"><span class="workflow-icon" aria-hidden="true">01</span><div><strong data-i18n="workflow1Title">A request arrives</strong><small data-i18n="workflow1Text">Email, form or business system</small></div><span class="workflow-check" aria-hidden="true">●</span></div><div class="workflow-item"><span class="workflow-icon" aria-hidden="true">02</span><div><strong data-i18n="workflow2Title">AI reads the context</strong><small data-i18n="workflow2Text">Relevant data, rules and history</small></div><span class="workflow-check" aria-hidden="true">●</span></div><div class="workflow-item"><span class="workflow-icon" aria-hidden="true">03</span><div><strong data-i18n="workflow3Title">The next step is prepared</strong><small data-i18n="workflow3Text">Classified, drafted or routed</small></div><span class="workflow-check" aria-hidden="true">●</span></div><div class="workflow-item"><span class="workflow-icon" aria-hidden="true">04</span><div><strong data-i18n="workflow4Title">Your team stays in control</strong><small data-i18n="workflow4Text">Review, approve and improve</small></div><span class="workflow-check" aria-hidden="true">●</span></div><div class="workflow-foot"><b>↗</b><span data-i18n="workflowFoot">Designed around your tools, people and definition of done.</span></div></div>
+      </div>
+    </section>
+
+    <section class="section approach" id="approach">
+      <div class="wrap">
+        <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="approachEyebrow">Clear steps. No black box.</p><h2 data-i18n="approachTitle">From “what if?” to something your team can use.</h2></div><p data-i18n="approachIntro">A close, collaborative process keeps the problem clear, the scope sensible and the people who will use the result involved throughout.</p></div>
+        <div class="steps">
+          <article class="step reveal"><div class="step-index"><span>01 / LISTEN</span></div><h3 data-i18n="step1Title">Understand the work</h3><p data-i18n="step1Text">We learn how the process works today, where it slows down and what a better outcome would look like.</p></article>
+          <article class="step reveal" data-delay="1"><div class="step-index"><span>02 / SHAPE</span></div><h3 data-i18n="step2Title">Find the right use case</h3><p data-i18n="step2Text">We assess feasibility, data, risk and integration needs, then agree what to prove first.</p></article>
+          <article class="step reveal" data-delay="2"><div class="step-index"><span>03 / BUILD</span></div><h3 data-i18n="step3Title">Make it real</h3><p data-i18n="step3Text">We develop, test and connect the solution in short feedback loops with your team.</p></article>
+          <article class="step reveal" data-delay="3"><div class="step-index"><span>04 / IMPROVE</span></div><h3 data-i18n="step4Title">Launch, learn, refine</h3><p data-i18n="step4Text">We help your people adopt it, monitor how it performs and plan the next useful step.</p></article>
+        </div>
+        <div class="approach-callout reveal"><p data-i18n="approachCallout"><strong>Not sure where AI fits?</strong> That is a perfectly good place to start.</p><a class="button button--light" href="#contact"><span data-i18n="approachCta">Bring us the messy version</span><span class="arrow" aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-photo reveal"><img src="img/team.jpeg" alt="The K-AI-ROS team collaborating on a software project" loading="lazy"><div class="about-stamp"><strong>ZLÍN</strong><span data-i18n="aboutStamp">Czech roots.<br>International outlook.</span></div></div>
+        <div class="about-copy reveal" data-delay="1"><p class="eyebrow" data-i18n="aboutEyebrow">A small team, close to the problem</p><h2 data-i18n="aboutTitle">Made in the Czech Republic. Built to work anywhere.</h2><p data-i18n="aboutText">K-AI-ROS Solutions is an independent AI and software studio based in Zlín. We bring business thinking and hands-on engineering together to make custom technology useful, understandable and ready for real work. Our team works in Czech and English with clients who value a direct, collaborative partnership.</p><div class="about-facts"><div class="about-fact"><strong data-i18n="aboutFact1Title">One accountable team</strong><span data-i18n="aboutFact1Text">From early discovery through delivery.</span></div><div class="about-fact"><strong data-i18n="aboutFact2Title">Built for your context</strong><span data-i18n="aboutFact2Text">Your workflows, data and existing tools.</span></div></div><a class="button button--ink" href="#contact"><span data-i18n="aboutCta">Meet your AI development partner</span><span class="arrow" aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+            <div class="wrap">
+              <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="faqEyebrow">Straight answers</p><h2 data-i18n="faqTitle">A few useful things to know.</h2></div><p data-i18n="faqIntro">A good first conversation starts with clarity about what we build, where we work and how a project gets moving.</p></div>
+              <div class="faq-list">
+                <details class="faq-item reveal"><summary data-i18n="faqQuestion1">What does K-AI-ROS Solutions build?</summary><p data-i18n="faqAnswer1">K-AI-ROS Solutions designs and builds custom AI applications, workflow automation, AI search and assistants, machine-learning solutions, and prototypes for business use.</p></details>
+                <details class="faq-item reveal"><summary data-i18n="faqQuestion2">How does an AI software project start?</summary><p data-i18n="faqAnswer2">The team first learns how the current process works, identifies a useful and feasible AI use case, agrees what to prove, and then develops and tests the solution with the client.</p></details>
+                <details class="faq-item reveal"><summary data-i18n="faqQuestion3">Where is K-AI-ROS Solutions based?</summary><p data-i18n="faqAnswer3">K-AI-ROS Solutions is an independent AI and software studio based in Zlín, Czech Republic. The team works in Czech and English with clients internationally.</p></details>
+              </div>
+            </div>
+          </section>
+
+        <section class="contact" id="contact">
+      <div class="contact-mark" aria-hidden="true"></div>
+      <div class="wrap contact-inner"><div class="reveal"><p class="eyebrow" data-i18n="contactEyebrow">Have a process in mind?</p><h2 data-i18n="contactTitle">Let's make AI useful.</h2><p data-i18n="contactText">Tell us what's taking too much time, what your team can't easily find, or what you'd love your product to do. We'll help you work out whether AI is the right answer.</p></div><div class="contact-actions reveal" data-delay="2"><a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdjg7ID3AMdSQ5gxvU9uiJNly4lpwb6gxZbi4zsxU83ZVe2fg/viewform" target="_blank" rel="noopener noreferrer"><span data-i18n="contactCta">Start a conversation</span><span class="arrow" aria-hidden="true">↗</span></a><a class="contact-link" href="mailto:solutions@kairos-etp.eu">solutions@kairos-etp.eu</a><a class="contact-link" href="tel:+420721670645">+420 721 670 645</a></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><div class="footer-main"><div class="footer-brand-block"><a class="brand" href="#home"><span class="brand-icon"><img src="loga/Kairos%20blank%20(2).png" alt=""></span><span class="brand-name">K-AI-ROS<span>SOLUTIONS</span></span></a><p class="footer-about" data-i18n="footerAbout">Custom AI software for better business workflows. Thoughtfully built in Zlín, Czech Republic, for teams here and everywhere.</p></div><div><h2 class="footer-title" data-i18n="footerExplore">Explore</h2><div class="footer-links"><a href="#work" data-i18n="navWork">What we build</a><a href="#approach" data-i18n="navApproach">How we work</a><a href="#about" data-i18n="navAbout">About</a></div></div><div><h2 class="footer-title" data-i18n="footerContact">Say hello</h2><div class="footer-links"><a href="mailto:solutions@kairos-etp.eu">solutions@kairos-etp.eu</a><a href="tel:+420721670645">+420 721 670 645</a><span>Zlín, Czech Republic</span></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> K-AI-ROS Solutions</span><span data-i18n="footerNote">Built around real work. Not AI theatre.</span></div></div></footer>
+
+  <script>
+    const copy = {
+      en: {
+        navWork: 'What we build', navApproach: 'How we work', navAbout: 'About', navCta: "Let's talk",
+        heroEyebrow: 'AI built around the way you work', heroTitle: 'Your business,<br>with an <em>extra brain.</em>', heroText: 'We design and build custom AI software that takes on the repetitive, connects the disconnected and helps your people make better decisions. Made for your business. Delivered by a team in the Czech Republic.', heroCta: 'Tell us what needs to work better', heroSecondary: 'See what we build', heroNote: 'INDEPENDENT AI STUDIO · ZLÍN, CZECH REPUBLIC · CZ / EN', visualTag: 'made<br>useful', photoCaption: 'People first. Technology second.', visualIndex: 'Built for you', heroFootLeft: 'From first useful idea to software your team actually uses', heroFootRight: "No AI for AI's sake",
+        introLabel: 'A practical AI partner for', intro1: 'Growing companies', intro2: 'Operational teams', intro3: 'Digital products', intro4: 'Complex workflows',
+        problemEyebrow: 'Start with the work, not the hype', problemTitle: 'Good AI starts with a <span>real bottleneck.</span>', problemText: 'The best use of AI is rarely “add a chatbot”. It is finding the point where time, attention or useful information gets lost, then building something that makes that work measurably easier.', problem1Title: 'The same work, again and again', problem1Text: 'Triage incoming requests, extract information from documents, prepare routine reports or handle the first round of support.', problem2Title: 'Knowledge scattered across the business', problem2Text: 'Let people find accurate answers in company documents, product information and internal knowledge, with sources in view.', problem3Title: 'Important signals buried in your data', problem3Text: 'Surface patterns, forecast demand, enrich decisions and turn the data you already own into a more useful tool.', problem4Title: 'A product idea that needs an AI layer', problem4Text: 'Build intelligent features into a web or mobile product, from first prototype through production and iteration.',
+        workEyebrow: 'From opportunity to working software', workTitle: 'The right tool for the job. Not a demo that goes nowhere.', workIntro: 'We combine product thinking, software engineering and applied AI to build systems around your goals, existing tools and real-world constraints.', cap1Title: 'Custom AI applications', cap1Text: 'Purpose-built web and mobile software, copilots and internal tools shaped around the people who will use them.', cap2Title: 'Workflow automation', cap2Text: 'Connect systems, remove avoidable hand-offs and put routine decisions on a reliable, reviewable path.', cap3Title: 'AI search & assistants', cap3Text: 'Make company knowledge easier to find, grounded in your own information and designed with sensible access controls.', cap4Title: 'Models, vision & prediction', cap4Text: 'Apply machine learning, language and image models where they solve a specific problem better than a rule-based approach.', cap5Title: 'AI strategy & prototypes', cap5Text: 'Prioritise viable opportunities, test assumptions early and know what is worth building before committing to a rollout.',
+        outcomeEyebrow: 'Useful is the whole point', outcomeTitle: 'Less busywork.<br>More room for<br><em>good decisions.</em>', outcomeText: 'We agree what should improve before we build. Then we shape, test and measure the solution against that outcome, not against how impressive the technology looks.', outcome1Title: 'Give time back', outcome1Text: 'Automate repeatable work so people can focus on work that needs people.', outcome2Title: 'Make knowledge usable', outcome2Text: 'Get relevant information to the right person, in the flow of their work.', outcome3Title: 'Improve consistency', outcome3Text: 'Standardise routine steps while keeping human review where it matters.', outcome4Title: 'Build room to grow', outcome4Text: 'Start with a focused use case and expand when the value is clear.', workflowHead: 'A workflow, made more useful', workflowStatus: '● Connected', workflow1Title: 'A request arrives', workflow1Text: 'Email, form or business system', workflow2Title: 'AI reads the context', workflow2Text: 'Relevant data, rules and history', workflow3Title: 'The next step is prepared', workflow3Text: 'Classified, drafted or routed', workflow4Title: 'Your team stays in control', workflow4Text: 'Review, approve and improve', workflowFoot: 'Designed around your tools, people and definition of done.',
+        approachEyebrow: 'Clear steps. No black box.', approachTitle: 'From “what if?” to something your team can use.', approachIntro: 'A close, collaborative process keeps the problem clear, the scope sensible and the people who will use the result involved throughout.', step1Title: 'Understand the work', step1Text: 'We learn how the process works today, where it slows down and what a better outcome would look like.', step2Title: 'Find the right use case', step2Text: 'We assess feasibility, data, risk and integration needs, then agree what to prove first.', step3Title: 'Make it real', step3Text: 'We develop, test and connect the solution in short feedback loops with your team.', step4Title: 'Launch, learn, refine', step4Text: 'We help your people adopt it, monitor how it performs and plan the next useful step.', approachCallout: '<strong>Not sure where AI fits?</strong> That is a perfectly good place to start.', approachCta: 'Přineste i nehotový nápad',
+        aboutStamp: 'České kořeny.<br>Mezinárodní rozhled.', aboutEyebrow: 'Malý tým, který zná váš problém', aboutTitle: 'Vyvíjíme v Česku. Tvoříme pro celý svět.', aboutText: 'K-AI-ROS Solutions je nezávislé AI a softwarové studio se sídlem ve Zlíně. Spojujeme obchodní uvažování s praktickým vývojem, aby technologie na míru byla užitečná, srozumitelná a připravená pro skutečný provoz. S klienty spolupracujeme česky i anglicky a zakládáme si na přímém, partnerském přístupu.', aboutFact1Title: 'Jeden zodpovědný tým', aboutFact1Text: 'Od úvodního poznání až po nasazení.', aboutFact2Title: 'Řešení podle vaší situace', aboutFact2Text: 'Vaše procesy, data i stávající nástroje.', aboutCta: 'Poznejte svého AI partnera',
+        contactEyebrow: 'Máte proces, který chcete zlepšit?', contactTitle: 'Pojďme AI využít naplno.', contactText: 'Napište nám, co zabírá příliš času, co lidé ve firmě nemohou najít nebo co by váš produkt měl umět. Společně zjistíme, jestli je AI to pravé řešení.', contactCta: 'Začněme rozhovorem', footerAbout: 'AI software na míru pro lepší firemní procesy. S rozmyslem vyvíjíme ve Zlíně pro týmy v Česku i kdekoliv jinde.', footerExplore: 'Prozkoumejte', footerContact: 'Ozvěte se', footerNote: 'Postaveno pro skutečnou práci, ne pro AI divadlo.'
+      },
+      cs: {
+        navWork: 'Co tvoříme', navApproach: 'Jak pracujeme', navAbout: 'O nás', navCta: 'Pojďme si promluvit',
+        heroEyebrow: 'AI navržená podle toho, jak pracujete', heroTitle: 'Vaše firma<br>s <em>dalším mozkem.</em>', heroText: 'Navrhujeme a vyvíjíme AI software na míru, který převezme opakující se práci, propojí oddělené systémy a pomůže vašim lidem dělat lepší rozhodnutí. Řešení stavíme pro vaše podnikání. Vyvíjí ho tým z České republiky.', heroCta: 'Řekněte nám, co má fungovat lépe', heroSecondary: 'Podívejte se, co tvoříme', heroNote: 'NEZÁVISLÉ AI STUDIO · ZLÍN · ČESKÁ REPUBLIKA · CZ / EN', visualTag: 'AI, která<br>pomáhá', photoCaption: 'Nejdřív lidé. Potom technologie.', visualIndex: 'Na míru', heroFootLeft: 'Od prvního nápadu k softwaru, který váš tým opravdu používá', heroFootRight: 'AI musí dávat smysl',
+        introLabel: 'Praktický AI partner pro', intro1: 'Rostoucí firmy', intro2: 'Provozní týmy', intro3: 'Digitální produkty', intro4: 'Složité procesy',
+        problemEyebrow: 'Začněme prací, ne módní vlnou', problemTitle: 'Dobrá AI řeší <span>skutečné úzké místo.</span>', problemText: 'Nejlepší využití AI obvykle není „přidáme chatbot“. Je potřeba najít místo, kde se ztrácí čas, pozornost nebo důležité informace, a vytvořit řešení, které práci prokazatelně usnadní.', problem1Title: 'Pořád dokola stejná práce', problem1Text: 'Třídění požadavků, vytěžování dokumentů, pravidelné reporty nebo první úroveň zákaznické podpory.', problem2Title: 'Firemní znalosti jsou všude možně', problem2Text: 'Pomůžeme lidem najít přesné odpovědi ve firemních dokumentech, produktových informacích i interních znalostech, včetně zdrojů.', problem3Title: 'Důležité souvislosti zůstávají v datech skryté', problem3Text: 'Odhalení vzorců, predikce poptávky i lepší rozhodování s využitím dat, která už máte.', problem4Title: 'Produkt potřebuje chytrou funkci', problem4Text: 'Vývoj inteligentních funkcí pro webové a mobilní produkty od prvního prototypu až po nasazení a další rozvoj.',
+        workEyebrow: 'Od příležitosti k fungujícímu softwaru', workTitle: 'Správný nástroj pro správnou práci. Ne demo bez pokračování.', workIntro: 'Propojujeme produktové uvažování, vývoj softwaru a praktickou AI. Vznikají tak systémy navržené podle vašich cílů, současných nástrojů a reálných podmínek.', cap1Title: 'AI aplikace na míru', cap1Text: 'Webový a mobilní software, asistenti i interní nástroje navržené pro lidi, kteří je budou používat.', cap2Title: 'Automatizace procesů', cap2Text: 'Propojíme systémy, odstraníme zbytečné předávání práce a rutinní rozhodování nastavíme spolehlivě a přehledně.', cap3Title: 'AI vyhledávání a asistenti', cap3Text: 'Zpřístupníme firemní znalosti, odpovědi ukotvíme ve vašich informacích a nastavíme smysluplná přístupová práva.', cap4Title: 'Modely, obrazová AI a predikce', cap4Text: 'Strojové učení, jazykové i obrazové modely využijeme tam, kde vyřeší konkrétní problém lépe než běžná pravidla.', cap5Title: 'AI strategie a prototypy', cap5Text: 'Určíme životaschopné příležitosti, včas ověříme předpoklady a zjistíme, co se vyplatí postavit.',
+        outcomeEyebrow: 'Užitečnost je to hlavní', outcomeTitle: 'Méně rutiny.<br>Více prostoru<br>pro <em>dobrá rozhodnutí.</em>', outcomeText: 'Ještě před vývojem si ujasníme, co se má zlepšit. Potom řešení navrhneme, otestujeme a vyhodnotíme podle výsledku, ne podle toho, jak efektně technologie vypadá.', outcome1Title: 'Vraťme lidem čas', outcome1Text: 'Automatizujme opakující se úkoly a uvolněme ruce práci, která potřebuje lidi.', outcome2Title: 'Zpřístupněme znalosti', outcome2Text: 'Dostaňme důležité informace ke správným lidem přímo do jejich pracovního procesu.', outcome3Title: 'Zajistěme konzistenci', outcome3Text: 'Sjednoťme rutinní postupy a ponechme lidskou kontrolu tam, kde je důležitá.', outcome4Title: 'Připravme prostor pro růst', outcome4Text: 'Začněme jedním konkrétním případem a rozšiřujme řešení, až bude jeho přínos jasný.', workflowHead: 'Pracovní proces, který dává větší smysl', workflowStatus: '● Propojeno', workflow1Title: 'Přijde požadavek', workflow1Text: 'E-mail, formulář nebo firemní systém', workflow2Title: 'AI vyhodnotí souvislosti', workflow2Text: 'Důležitá data, pravidla a historie', workflow3Title: 'Připraví se další krok', workflow3Text: 'Třídění, návrh odpovědi nebo předání', workflow4Title: 'Váš tým má vše pod kontrolou', workflow4Text: 'Kontrola, schválení i další úpravy', workflowFoot: 'Navržené podle vašich nástrojů, lidí a očekávaného výsledku.',
+        approachEyebrow: 'Jasné kroky. Žádná černá skříňka.', approachTitle: 'Od „co kdyby?“ k řešení, které tým skutečně využije.', approachIntro: 'Úzká spolupráce udržuje zadání srozumitelné, rozsah rozumný a budoucí uživatele zapojuje do celého vývoje.', step1Title: 'Poznáme vaši práci', step1Text: 'Zjistíme, jak proces funguje dnes, kde se zadrhává a co by měl přinést lepší výsledek.', step2Title: 'Vybereme vhodný případ', step2Text: 'Posoudíme proveditelnost, data, rizika i integrace a společně určíme, co ověřit jako první.', step3Title: 'Pustíme se do vývoje', step3Text: 'Řešení vyvíjíme, testujeme a propojujeme v krátkých cyklech se zpětnou vazbou vašeho týmu.', step4Title: 'Nasadíme a vylepšujeme', step4Text: 'Pomůžeme s přijetím v týmu, sledujeme fungování a navrhneme další užitečný krok.', approachCallout: '<strong>Nejste si jistí, kde AI využít?</strong> Tím se dá skvěle začít.', approachCta: 'Přineste i nehotový nápad',
+        aboutStamp: 'Czech roots.<br>International outlook.', aboutEyebrow: 'Malý tým, který zná váš problém', aboutTitle: 'Vyvíjíme v Česku. Tvoříme pro celý svět.', aboutText: 'K-AI-ROS Solutions je nezávislé AI a softwarové studio se sídlem ve Zlíně. Spojujeme obchodní uvažování s praktickým vývojem, aby technologie na míru byla užitečná, srozumitelná a připravená pro skutečný provoz. S klienty spolupracujeme česky i anglicky a zakládáme si na přímém, partnerském přístupu.', aboutFact1Title: 'Jeden zodpovědný tým', aboutFact1Text: 'Od úvodního poznání až po nasazení.', aboutFact2Title: 'Řešení podle vaší situace', aboutFact2Text: 'Vaše procesy, data i stávající nástroje.', aboutCta: 'Poznejte svého AI partnera',
+        contactEyebrow: 'Máte proces, který chcete zlepšit?', contactTitle: 'Pojďme AI využít naplno.', contactText: 'Napište nám, co zabírá příliš času, co lidé ve firmě nemohou najít nebo co by váš produkt měl umět. Společně zjistíme, jestli je AI to pravé řešení.', contactCta: 'Začněme rozhovorem', footerAbout: 'AI software na míru pro lepší firemní procesy. S rozmyslem vyvíjíme ve Zlíně pro týmy v Česku i kdekoliv jinde.', footerExplore: 'Prozkoumejte', footerContact: 'Ozvěte se', footerNote: 'Postaveno pro skutečnou práci, ne pro AI divadlo.'
+      }
+    };
+
+    const languageButtons = document.querySelectorAll('[data-language]');
+        Object.assign(copy.en, {
+          approachTitle: 'From “what if?” to something your team can use.',
+          approachIntro: 'A close, collaborative process keeps the problem clear, the scope sensible and the people who will use the result involved throughout.',
+          step1Title: 'Understand the work', step1Text: 'We learn how the process works today, where it slows down and what a better outcome would look like.',
+          step2Title: 'Find the right use case', step2Text: 'We assess feasibility, data, risk and integration needs, then agree what to prove first.',
+          step3Title: 'Make it real', step3Text: 'We develop, test and connect the solution in short feedback loops with your team.',
+          step4Title: 'Launch, learn, refine', step4Text: 'We help your people adopt it, monitor how it performs and plan the next useful step.',
+          approachCallout: '<strong>Not sure where AI fits?</strong> That is a perfectly good place to start.', approachCta: 'Bring us the messy version',
+          aboutStamp: 'Czech roots.<br>International outlook.', aboutEyebrow: 'A small team, close to the problem', aboutTitle: 'Built in the Czech Republic. Ready to work anywhere.',
+          aboutText: 'K-AI-ROS Solutions is an independent AI and software studio based in Zlín. We bring business thinking and hands-on engineering together to make custom technology useful, understandable and ready for real work. Our team works in Czech and English with clients who value a direct, collaborative partnership.',
+          aboutFact1Title: 'One accountable team', aboutFact1Text: 'From early discovery through delivery.', aboutFact2Title: 'Built for your context', aboutFact2Text: 'Your workflows, data and existing tools.', aboutCta: 'Meet your AI development partner',
+          contactEyebrow: 'Have a process in mind?', contactTitle: "Let's make AI useful.",
+          contactText: "Tell us what's taking too much time, what your team can't easily find, or what you'd love your product to do. We'll help you work out whether AI is the right answer.",
+          contactCta: 'Start a conversation', footerAbout: 'Custom AI software for better business workflows. Thoughtfully built in Zlín, Czech Republic, for teams here and everywhere.',
+          footerExplore: 'Explore', footerContact: 'Say hello', footerNote: 'Built around real work. Not AI theatre.'
+        });
+        copy.cs.aboutStamp = 'České kořeny.<br>Mezinárodní rozhled.';
+    Object.assign(copy.en, {
+      faqEyebrow: 'Straight answers', faqTitle: 'A few useful things to know.',
+      faqIntro: 'A good first conversation starts with clarity about what we build, where we work and how a project gets moving.',
+      faqQuestion1: 'What does K-AI-ROS Solutions build?',
+      faqAnswer1: 'K-AI-ROS Solutions designs and builds custom AI applications, workflow automation, AI search and assistants, machine-learning solutions, and prototypes for business use.',
+      faqQuestion2: 'How does an AI software project start?',
+      faqAnswer2: 'The team first learns how the current process works, identifies a useful and feasible AI use case, agrees what to prove, and then develops and tests the solution with the client.',
+      faqQuestion3: 'Where is K-AI-ROS Solutions based?',
+      faqAnswer3: 'K-AI-ROS Solutions is an independent AI and software studio based in Zlín, Czech Republic. The team works in Czech and English with clients internationally.'
+    });
+    Object.assign(copy.cs, {
+      faqEyebrow: 'Jasné odpovědi', faqTitle: 'Co se hodí vědět na začátek.',
+      faqIntro: 'První rozhovor je jednodušší, když víte, co vyvíjíme, kde působíme a jak spolupráce začíná.',
+      faqQuestion1: 'Co K-AI-ROS Solutions vyvíjí?',
+      faqAnswer1: 'K-AI-ROS Solutions navrhuje a vyvíjí AI aplikace na míru, automatizaci procesů, firemní vyhledávání a asistenty, řešení strojového učení i prototypy pro praktické využití.',
+      faqQuestion2: 'Jak začíná projekt AI softwaru?',
+      faqAnswer2: 'Nejprve poznáme současný proces, společně najdeme užitečný a proveditelný případ pro AI a dohodneme, co ověřit jako první. Potom řešení vyvíjíme a testujeme s vaším týmem.',
+      faqQuestion3: 'Kde K-AI-ROS Solutions sídlí?',
+      faqAnswer3: 'K-AI-ROS Solutions je nezávislé AI a softwarové studio ve Zlíně v České republice. S klienty spolupracuje česky i anglicky, také v zahraničí.'
+    });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobilePanel = document.getElementById('mobile-panel');
+    let currentLanguage = 'en';
+    let languageManuallySelected = false;
+    const languageStorageKey = 'kairos-language';
+
+    function setLanguage(language) {
+      currentLanguage = language;
+      document.documentElement.lang = language;
+      document.title = language === 'en'
+        ? 'K-AI-ROS Solutions | Custom AI software, built around your business'
+        : 'K-AI-ROS Solutions | AI software na míru vašemu podnikání';
+      document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const value = copy[language][element.dataset.i18n];
+        if (value) element.innerHTML = value;
+      });
+      languageButtons.forEach((button) => {
+        button.setAttribute('aria-pressed', String(button.dataset.language === language));
+      });
+      document.querySelector('meta[name="description"]').content = language === 'en'
+        ? 'K-AI-ROS Solutions designs and builds custom AI software for real business workflows. Based in Zlín, Czech Republic. Working in English and Czech.'
+        : 'K-AI-ROS Solutions navrhuje a vyvíjí AI software na míru pro skutečné firemní procesy. Sídlíme ve Zlíně a pracujeme česky i anglicky.';
+    }
+
+    function applyCountryLanguage(countryCode) {
+      if (!languageManuallySelected) setLanguage(countryCode === 'CZ' ? 'cs' : 'en');
+    }
+
+    languageButtons.forEach((button) => button.addEventListener('click', () => {
+      languageManuallySelected = true;
+      try {
+        localStorage.setItem(languageStorageKey, button.dataset.language);
+      } catch {
+        // The language switch still works when browser storage is unavailable.
+      }
+      setLanguage(button.dataset.language);
+    }));
+
+    let savedLanguage = null;
+    try {
+      savedLanguage = localStorage.getItem(languageStorageKey);
+    } catch {
+      savedLanguage = null;
+    }
+
+    if (savedLanguage === 'en' || savedLanguage === 'cs') {
+      languageManuallySelected = true;
+      setLanguage(savedLanguage);
+    } else {
+      const locationController = new AbortController();
+      const locationTimeout = window.setTimeout(() => locationController.abort(), 2500);
+      fetch('https://api.country.is/', {
+        headers: { Accept: 'application/json' },
+        signal: locationController.signal
+      })
+        .then((response) => {
+          if (!response.ok) throw new Error('Country lookup failed');
+          return response.json();
+        })
+        .then((location) => applyCountryLanguage(location.country))
+        .catch(() => {})
+        .finally(() => window.clearTimeout(locationTimeout));
+    }
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
+      mobilePanel.classList.toggle('is-open', !isOpen);
+    });
+    mobilePanel.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      mobilePanel.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation');
+    }));
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+
+    const progress = document.getElementById('scroll-progress');
+    let scrollTicking = false;
+    window.addEventListener('scroll', () => {
+      if (!scrollTicking) {
+        window.requestAnimationFrame(() => {
+          const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+          progress.style.width = `${scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0}%`;
+          scrollTicking = false;
+        });
+        scrollTicking = true;
+      }
+    }, { passive: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
